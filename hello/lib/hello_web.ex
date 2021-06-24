@@ -47,6 +47,8 @@ defmodule HelloWeb do
       use Phoenix.LiveView,
         layout: {HelloWeb.LayoutView, "live.html"}
 
+      import HelloWeb.LiveHelpers
+
       unquote(view_helpers())
     end
   end
